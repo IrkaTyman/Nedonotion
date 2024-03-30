@@ -1,0 +1,13 @@
+:root {
+    --font-size-m: 16px;
+
+    /* Colors */
+    --main-text-color: #050505;
+    --active-text-color: #676767;
+    --secondary-text-color: #989897;
+    --active-color: #DFDFDE;
+    --secondary-active-color: #F5F5F4;
+    --primary-color: #2383E2;
+    --danger-color: #EA4335;
+    --accent-color: #FBBC04;
+}
