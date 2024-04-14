@@ -1,2 +1,8 @@
 @import url("normilize.css");
 @import url("variables.css");
+@import url("fonts.css");
+
+* {
+    outline-color: var(--main-text-color);
+    font: var(--font-m);
+}

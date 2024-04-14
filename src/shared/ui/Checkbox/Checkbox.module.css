@@ -1,0 +1,66 @@
+.Checkbox__input {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.Checkbox__label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.Checkbox__label::before {
+    content:'';
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-m);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+.Checkbox__label:hover::before{
+    border-color: var(--active-primary-color);
+}
+
+.Checkbox__input:disabled + .Checkbox__label {
+    cursor: default;
+}
+
+.Checkbox__input:disabled + .Checkbox__label::before {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.Checkbox__input:disabled + .Checkbox__label::before {
+    border-color: var(--primary-color);
+}
+
+.Checkbox__input:checked + .Checkbox__label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 5px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.Checkbox__input:checked + .Checkbox__label::before {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.Checkbox__input:focus + .Checkbox__label::before {
+    border-color: var(--primary-color);
+}

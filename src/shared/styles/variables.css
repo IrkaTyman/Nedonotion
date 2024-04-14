@@ -1,6 +1,4 @@
 :root {
-    --font-size-m: 16px;
-
     /* Colors */
     --main-text-color: #050505;
     --active-text-color: #676767;
@@ -8,6 +6,22 @@
     --active-color: #DFDFDE;
     --secondary-active-color: #F5F5F4;
     --primary-color: #2383E2;
+    --active-primary-color: #0e6dc4;
     --danger-color: #EA4335;
     --accent-color: #FBBC04;
+
+    --border-radius-m: 4px;
+
+    /* Fonts */
+    --font-size-m: 14px;
+    --line-height-m: 21px;
+    --font-m: var(--font-size-m)/var(--line-height-m) Inter, sans-serif;
+
+    --font-size-s: 12px;
+    --line-height-s: 18px;
+    --font-s: var(--font-size-s)/var(--line-height-s) Inter, sans-serif;
+
+    --font-size-xs: 10px;
+    --line-height-xs: 15px;
+    --font-xs: var(--font-size-xs)/var(--line-height-xs) Inter, sans-serif;
 }
