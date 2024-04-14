@@ -1,0 +1,28 @@
+.IconButton {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.IconButton:disabled {
+    cursor: default;
+    opacity: var(--disabled-opacity);
+}
+
+.IconButton > svg {
+    width: calc(var(--font-size-m) + 2px);
+    height: calc(var(--font-size-m) + 2px);
+    fill: var(--secondary-text-color)
+}
+
+.IconButton:hover > svg {
+    fill: var(--active-text-color)
+}
+
+.IconButton:disabled > svg {
+    fill: var(--secondary-text-color)
+}

@@ -24,4 +24,12 @@
     --font-size-xs: 10px;
     --line-height-xs: 15px;
     --font-xs: var(--font-size-xs)/var(--line-height-xs) Inter, sans-serif;
+
+    --space-xs: calc(var(--space-s) / 2);
+    --space-s: calc(var(--space-m) / 2);
+    --space-m: 16px;
+    --space-l: calc(var(--space-m) * 2);
+    --space-xl: calc(var(--space-l) * 2);
+
+    --disabled-opacity: 0.6;
 }

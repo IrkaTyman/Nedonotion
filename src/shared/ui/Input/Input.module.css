@@ -1,0 +1,28 @@
+.Input {
+    padding: 10px 12px;
+    border: 2px solid var(--secondary-active-color);
+    border-radius: var(--border-radius-m);
+}
+
+.Input:hover {
+    border-color: var(--active-color);
+}
+
+.Input:has( > .Input__input:focus) {
+    border-color: var(--primary-color);
+}
+
+.Input__input {
+    outline: none;
+    border: none;
+    flex:1;
+    font-size: var(--font-size-m);
+}
+
+.Input__input::placeholder {
+    color:var(--secondary-text-color);
+}
+
+.Input__content {
+    max-width: calc(var(--font-size-m) + 2px);
+}
