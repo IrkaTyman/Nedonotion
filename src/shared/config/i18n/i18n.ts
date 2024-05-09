@@ -18,7 +18,6 @@ i18n
         supportedLngs: ['ru', 'en'],
         backend: {
             loadPath: (languages: string[], namespaces: string[]) => {
-                console.log(languages);
                 return `/locales/${languages[0]}/${namespaces[0]}.json`;
             },
         },
