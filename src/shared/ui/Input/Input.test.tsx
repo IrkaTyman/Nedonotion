@@ -1,14 +1,10 @@
 import { screen, render } from '@testing-library/react';
 
 import {
-    createWrapper,
-    mockAxios,
-    resetAxiosMock,
-} from '@shared/mock/axios';
-import {
     mockI18Next,
     restoreI18NextMock,
 } from '@shared/mock/i18n';
+import { createWrapper } from '@shared/mock/jest';
 
 import { Input } from './Input';
 
@@ -21,16 +17,7 @@ describe('shared/Input', () => {
     });
 
     afterAll(() => {
-        resetAxiosMock();
         restoreI18NextMock();
-    });
-
-    beforeEach(() => {
-        mockAxios();
-    });
-
-    afterEach(() => {
-        resetAxiosMock();
     });
 
     it('Компонент появился в DOM дереве', async () => {

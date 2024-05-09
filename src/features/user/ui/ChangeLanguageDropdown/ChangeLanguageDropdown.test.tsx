@@ -1,14 +1,10 @@
 import { screen, render } from '@testing-library/react';
 
 import {
-    createWrapper,
-    mockAxios,
-    resetAxiosMock,
-} from '@shared/mock/axios';
-import {
     mockI18Next,
     restoreI18NextMock,
 } from '@shared/mock/i18n';
+import { createWrapper } from '@shared/mock/jest';
 
 import { ChangeLanguageDropdown } from './ChangeLanguageDropdown';
 
@@ -21,18 +17,8 @@ describe('features/user/ChangeLanguageDropdown', () => {
     });
 
     afterAll(() => {
-        restoreAxiosMock();
         restoreI18NextMock();
     });
-
-    beforeEach(() => {
-        mockAxios();
-    });
-
-    afterEach(() => {
-        resetAxiosMock();
-    });
-
     it('Компонент появился в DOM дереве', async () => {
         render(<ChangeLanguageDropdown />, { wrapper });
 
