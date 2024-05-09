@@ -1,7 +1,7 @@
 .Button {
     padding: 10px 16px;
     border-radius: var(--border-radius-m);
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     line-height: 1;
     outline: none;
     display: flex;
@@ -47,8 +47,11 @@
 }
 
 .Button_variant_bordered {
-    background-color: transparent;
     color: var(--main-text-color);
+}
+
+.Button_variant_bordered:not(:focus):not(:hover):not(:active) {
+    background-color: transparent;
 }
 
 .Button_variant_text {

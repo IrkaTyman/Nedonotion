@@ -1,0 +1,23 @@
+.FormField {
+    width: 100%;
+}
+
+.FormField__label {
+    margin-bottom: 0;
+}
+
+.FormField__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.FormField__endContent {
+    position: absolute;
+    right: var(--space-s);
+}
+
+.FormField__error {
+    color: var(--danger-color);
+}

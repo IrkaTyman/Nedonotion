@@ -2,6 +2,7 @@
     padding: 10px 12px;
     border: 1px solid var(--secondary-active-color);
     border-radius: var(--border-radius-m);
+    width: 100%;
 }
 
 .Input:hover {
