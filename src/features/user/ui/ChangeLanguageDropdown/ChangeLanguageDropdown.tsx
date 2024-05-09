@@ -1,4 +1,4 @@
-import { FC, useCallback, useMemo, useState } from 'react';
+import { FC, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Select from 'react-select';
 
@@ -6,7 +6,6 @@ import { getBemClasses, typedMemo } from '@shared/lib';
 import { ClassNameProps, TestProps } from '@shared/types';
 import { SelectItem } from '@shared/ui/Select/SelectItem';
 
-import classNames from '*.css';
 import styles from './ChangeLanguageDropdown.module.css';
 
 export type Props = ClassNameProps & TestProps & Readonly<{}>;
@@ -20,7 +19,7 @@ export const ChangeLanguageDropdown: FC<Props> = typedMemo(function ChangeLangua
     className,
     'data-testid': dataTestId = 'ChangeLanguageDropdown',
 }) {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [languageOption, setLanguageOption] = useState(
         availableLanguages.find(({ value }) => value === i18n.language),
     );

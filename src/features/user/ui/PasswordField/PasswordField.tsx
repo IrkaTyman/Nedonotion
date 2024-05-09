@@ -6,7 +6,7 @@ import EyeSlash from '@shared/assets/icons/EyeSlash.svg';
 import { Namespace } from '@shared/config/i18n';
 import { getBemClasses, typedMemo } from '@shared/lib';
 import { ClassNameProps, TestProps } from '@shared/types';
-import { Button, FormField, IconButton, Input } from '@shared/ui';
+import { FormField, IconButton, Input } from '@shared/ui';
 
 import styles from './PasswordField.module.css';
 
@@ -16,7 +16,7 @@ export const PasswordField: FC<Props> = typedMemo(function PasswordField({
     className,
     'data-testid': dataTestId = 'PasswordField',
 }) {
-    const { t } = useTranslation();
+    const { t } = useTranslation([Namespace.Common.ns]);
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleIsVisible = useCallback(() => setIsVisible(isVisible => !isVisible), []);

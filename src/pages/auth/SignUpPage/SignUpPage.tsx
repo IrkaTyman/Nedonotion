@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 import { ChangeLanguageDropdown, SignUpForm } from '@features/user';
 
@@ -7,7 +8,7 @@ import SmallLogo from '@shared/assets/icons/SmallLogo.svg';
 import { Namespace } from '@shared/config/i18n';
 import { getBemClasses, typedMemo } from '@shared/lib';
 import { ClassNameProps, TestProps } from '@shared/types';
-import { getFlexContainerStyleClasses } from '@shared/ui';
+import { Button, FlexContainer, getFlexContainerStyleClasses } from '@shared/ui';
 
 import styles from './SignUpPage.module.css';
 
@@ -17,8 +18,8 @@ export const SignUpPage: FC<Props> = typedMemo(function SignUpPage({
     className,
     'data-testid': dataTestId = 'SignUpPage',
 }) {
-    const { t } = useTranslation();
-
+    const { t, i18n } = useTranslation([Namespace.Auth.ns]);
+    console.log(t, i18n);
     return (
         <div
             className={getBemClasses(styles, null, null, className)}
@@ -34,6 +35,17 @@ export const SignUpPage: FC<Props> = typedMemo(function SignUpPage({
                 </h1>
 
                 <SignUpForm className={getBemClasses(styles, 'form')} />
+
+                <FlexContainer direction="row" gap="xs" alignItems="center">
+                    <p className={getBemClasses(styles, 'back')}>
+                        {t('sign_up__has_account', Namespace.Auth)}
+                    </p>
+                    <Link to="/signin">
+                        <Button variant="text">
+                            {t('sign_in', Namespace.Auth)}
+                        </Button>
+                    </Link>
+                </FlexContainer>
             </main>
         </div>
     );

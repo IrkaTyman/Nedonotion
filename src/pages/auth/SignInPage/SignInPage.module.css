@@ -22,3 +22,7 @@ min-height: 100vh;
     max-width: 400px;
     width: 100%;
 }
+
+.SignInPage__back {
+    color: var(--secondary-text-color);
+}

@@ -1,8 +1,8 @@
 import { RouteProps } from 'react-router-dom';
 
-import { GreetingPage } from '@pages/auth/GreetingPage';
-import { SignInPage } from '@pages/auth/SignInPage';
-import { SignUpPage } from '@pages/auth/SignUpPage';
+import { GreetingPage } from './GreetingPage';
+import { SignInPage } from './SignInPage';
+import { SignUpPage } from './SignUpPage';
 
 export const authRouteConfig: RouteProps[] = [
     {

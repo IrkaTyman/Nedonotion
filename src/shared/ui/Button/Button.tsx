@@ -46,7 +46,7 @@ export const Button: FC<Props> = typedMemo(function Button({
     'data-testid': dataTestId = 'Button',
     ...buttonProps
 }) {
-    const { t } = useTranslation();
+    const { t } = useTranslation([Namespace.Common.ns]);
     const ContentComponent = useMemo((): ReactNode => {
         return isLoading
             ? loader ??
@@ -57,7 +57,7 @@ export const Button: FC<Props> = typedMemo(function Button({
                 overflow="nowrap"
             >
                 <Loader variant={'circle'} size={14} className={getBemClasses(styles, 'loader')} />
-                {`${t('core_loading', Namespace.Common)}...`}
+                {`${t('loading', Namespace.Common)}...`}
             </FlexContainer>
             : buttonProps.children;
     }, [isLoading, buttonProps, t]);

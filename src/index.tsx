@@ -9,6 +9,7 @@ import { ErrorBoundary } from '@app/providers/ErrorBoundary';
 import { QueryClientProvider } from 'react-query';
 
 import { queryClient } from '@shared/config/query';
+import '@shared/styles/index.css';
 
 const root = createRoot(document.getElementById('root')!);
 root.render(

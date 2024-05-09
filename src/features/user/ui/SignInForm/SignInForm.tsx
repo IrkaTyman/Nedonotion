@@ -38,7 +38,7 @@ export const SignInForm: FC<Props> = typedMemo(function SignInForm({
     className,
     'data-testid': dataTestId = 'SignInForm',
 }) {
-    const { t } = useTranslation();
+    const { t } = useTranslation([Namespace.Auth.ns, Namespace.Common.ns]);
     const validationSchema = useMemo(() => getValidationSchema(t), [t]);
 
     const [signIn, , signInLoading, signInError] = useCreateUserWithEmailAndPassword(auth);

@@ -8,7 +8,7 @@ import GreetingUrl from '@shared/assets/images/Greeting.png';
 import { Namespace } from '@shared/config/i18n';
 import { getBemClasses, typedMemo } from '@shared/lib';
 import { ClassNameProps, TestProps } from '@shared/types';
-import { Button } from '@shared/ui/Button';
+import { Button } from '@shared/ui';
 import { FlexContainer, getFlexContainerStyleClasses } from '@shared/ui/FlexContainer';
 
 import styles from './GreetingPage.module.css';
@@ -19,7 +19,7 @@ export const GreetingPage: FC<Props> = typedMemo(function GreetingPage({
     className,
     'data-testid': dataTestId = 'GreetingPage',
 }) {
-    const { t } = useTranslation();
+    const { t } = useTranslation([Namespace.Auth.ns]);
 
     return (
         <div
@@ -83,13 +83,15 @@ export const GreetingPage: FC<Props> = typedMemo(function GreetingPage({
                     <p className={getBemClasses(styles, 'subtitle')}>
                         {t('greeting_subtitle', Namespace.Auth)}
                     </p>
-                    <Button
-                        variant="solid"
-                        color="main"
-                    >
-                        {t('start_create', Namespace.Auth)}
-                        <ArrowRight className={getBemClasses(styles, 'buttonIcon')} />
-                    </Button>
+                    <Link to="/signup">
+                        <Button
+                            variant="solid"
+                            color="main"
+                        >
+                            {t('start_create', Namespace.Auth)}
+                            <ArrowRight className={getBemClasses(styles, 'buttonIcon')} />
+                        </Button>
+                    </Link>
                 </FlexContainer>
 
                 <img

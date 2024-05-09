@@ -1,24 +1,29 @@
-.SignInPage {
+.SignUpPage {
 min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.SignInPage__header {
+.SignUpPage__header {
     padding: var(--space-l)
 }
 
-.SignInPage__logo {
+.SignUpPage__logo {
     width: 40px;
     height: 40px;
 }
 
-.SignInPage__title {
+.SignUpPage__title {
     font-weight: var(--font-weight-bold);
     font-size: 76px;
 }
 
-.SignInPage__form {
+.SignUpPage__form {
     max-width: 400px;
     width: 100%;
 }
+
+.SignUpPage__back {
+    color: var(--secondary-text-color);
+}
+

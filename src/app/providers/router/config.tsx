@@ -1,6 +1,6 @@
 import { RouteProps, Navigate } from 'react-router-dom';
 
-import { authRouteConfig } from '@pages/auth/routes';
+import { authRouteConfig } from '@pages/auth';
 
 export const routeConfig = (isAuth: boolean): RouteProps[] => {
     let routes: RouteProps[] = [];

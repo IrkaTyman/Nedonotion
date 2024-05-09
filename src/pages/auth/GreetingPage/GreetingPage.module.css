@@ -28,7 +28,7 @@
 }
 
 .GreetingPage__image {
-    max-height: 300px;
+    max-height: clamp(200px, 35vh, 400px);
     max-width: 100%;
     object-fit: contain;
 }
