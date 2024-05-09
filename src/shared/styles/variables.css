@@ -13,13 +13,18 @@
     --border-radius-m: 4px;
 
     /* Fonts */
+    --line-height: 1.3;
+
+    --font-size-xl: 30px;
+    --font-xl: var(--font-size-xl)/var(--line-height) Inter, sans-serif;
+
+    --font-size-l: 18px;
+
     --font-size-m: 14px;
-    --line-height-m: 21px;
-    --font-m: var(--font-size-m)/var(--line-height-m) Inter, sans-serif;
+    --font-m: var(--font-size-m)/var(--line-height) Inter, sans-serif;
 
     --font-size-s: 12px;
-    --line-height-s: 18px;
-    --font-s: var(--font-size-s)/var(--line-height-s) Inter, sans-serif;
+    --font-s: var(--font-size-s)/var(--line-height) Inter, sans-serif;
 
     --font-size-xs: 10px;
     --line-height-xs: 15px;
@@ -28,8 +33,15 @@
     --space-xs: calc(var(--space-s) / 2);
     --space-s: calc(var(--space-m) / 2);
     --space-m: 16px;
-    --space-l: calc(var(--space-m) * 2);
-    --space-xl: calc(var(--space-l) * 2);
+    --space-l: 24px;
+    --space-xl: calc(var(--space-m) * 2);
+    --space-xxl: calc(var(--space-xl) * 2);
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
     --disabled-opacity: 0.6;
+    --icon-size: 14px;
 }

@@ -1,0 +1,40 @@
+.GreetingPage {
+    min-height: 100vh;
+}
+
+.GreetingPage__header {
+    padding: var(--space-l)
+}
+
+.GreetingPage__logo {
+    height: 40px;
+}
+
+.GreetingPage__main,
+.GreetingPage__content {
+    flex: 1;
+}
+
+.GreetingPage__title {
+    font-weight: var(--font-weight-bold);
+    font-size: 76px;
+    line-height: 1;
+}
+
+.GreetingPage__subtitle {
+    font: var(--font-xl);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-xl);
+}
+
+.GreetingPage__image {
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.GreetingPage__buttonIcon {
+    fill: #fff;
+    height: var(--icon-size);
+    width: var(--icon-size);
+}

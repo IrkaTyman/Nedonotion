@@ -5,4 +5,11 @@
 * {
     outline-color: var(--main-text-color);
     font: var(--font-m);
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
