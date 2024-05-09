@@ -1,7 +1,6 @@
 import { type Decorator } from '@storybook/react';
 import { FormikConfig, FormikValues } from 'formik';
 
-import { QueryWrapper } from '@shared/mock/jest';
 import { FormikWrapper } from '@shared/mock/jest/FormikWrapper';
 
 /**

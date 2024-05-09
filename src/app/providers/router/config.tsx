@@ -1,8 +1,26 @@
-import { RouteProps } from 'react-router-dom';
+import { RouteProps, Navigate } from 'react-router-dom';
 
-export const routeConfig: RouteProps[] = [
-    {
-        path: '*',
-        element: <p style={{ color: 'red' }}>Not found page</p>,
-    },
-];
+import { authRouteConfig } from '@pages/auth/routes';
+
+export const routeConfig = (isAuth: boolean): RouteProps[] => {
+    let routes: RouteProps[] = [];
+
+    if (isAuth) {
+        routes = routes.concat([
+            {
+                path: '*',
+                element: <Navigate to={'/'} />,
+            },
+        ]);
+    } else {
+        routes = routes.concat([
+            ...authRouteConfig,
+            {
+                path: '*',
+                element: <Navigate to={'/signin'} />,
+            },
+        ]);
+    }
+
+    return routes;
+};
