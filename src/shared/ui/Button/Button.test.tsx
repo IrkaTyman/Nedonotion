@@ -13,4 +13,11 @@ describe('shared/Button', () => {
         const component = await screen.findByTestId('Button');
         expect(component).toBeInTheDocument();
     });
+
+    it('Компонент появился в DOM дереве', async () => {
+        render(<Button />, { wrapper });
+
+        const component = await screen.findByTestId('Button');
+        expect(component).toBeInTheDocument();
+    });
 });

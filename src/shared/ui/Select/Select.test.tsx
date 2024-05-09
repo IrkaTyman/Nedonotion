@@ -10,9 +10,9 @@ import {
     restoreI18NextMock,
 } from '@shared/mock/i18n';
 
-import { Input } from './Input';
+import { Select } from './Select';
 
-describe('shared/Input', () => {
+describe('shared/Select', () => {
     const wrapper = createWrapper({});
 
     beforeAll(() => {
@@ -34,9 +34,10 @@ describe('shared/Input', () => {
     });
 
     it('Компонент появился в DOM дереве', async () => {
-        render(<Input />, { wrapper });
+        render(<Select />, { wrapper });
 
-        const component = await screen.findByTestId('Input');
+        const component = await screen.findByTestId('Select');
         expect(component).toBeInTheDocument();
     });
-});
+})
+;

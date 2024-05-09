@@ -1,0 +1,29 @@
+.Select {
+
+}
+
+.Select__control {
+    border-color: var(--secondary-active-color)
+}
+
+.Select__control:hover {
+    border-color: var(--active-color)
+}
+
+.Select__control_isFocused,
+.Select__control_isFocused:hover {
+    border-color: var(--primary-color)
+}
+
+.Select__valueContainer {
+    padding: 10px 12px;
+}
+
+.Select__input {
+    padding: 0;
+    margin: 0;
+}
+
+.Select__indicatorSeparator {
+    background-color: var(--secondary-active-color);
+}
