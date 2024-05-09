@@ -41,6 +41,10 @@
     right: calc(var(--space-xl) / 2 * -1);
 }
 
+.FlexContainer_withSplitter.FlexContainer_gap_xxl > *:not(:last-child)::after {
+    right: calc(var(--space-xxl) / 2 * -1);
+}
+
 .FlexContainer_direction_row {
     flex-direction: row;
 }
@@ -75,6 +79,10 @@
 
 .FlexContainer_gap_xl {
     gap: var(--space-xl);
+}
+
+.FlexContainer_gap_xxl {
+    gap: var(--space-xxl);
 }
 
 .FlexContainer_justifyContent_start {

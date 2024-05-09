@@ -18,7 +18,7 @@ export type Props = PropsWithChildren &
         /**
          * Промежуток между элементами
          */
-        gap?: 'xs' | 's' | 'm' | 'l' | 'xl';
+        gap?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl';
 
         /**
          * Расположение элементов
