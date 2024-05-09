@@ -9,7 +9,7 @@ import { User } from '../model/User';
 /**
  * Хук для получения пользователя по uid
  */
-export function useGetUser(uid: string): DocumentHook<User> {
+export function useGetUserListener(uid: string): DocumentHook<User> {
     const ref = useMemo(() => doc(db, 'users', uid) as DocumentReference<User>, [uid]);
     return useDocument<User>(ref);
 }

@@ -10,7 +10,7 @@ import { User } from '../model/User';
 /**
  * Хук для получения текущего пользователя
  */
-export function useGetCurrentUser(): DocumentHook<User> {
+export function useGetCurrentUserListener(): DocumentHook<User> {
     const [user] = useAuthState(auth);
     const ref = useMemo(() => user
         ? doc(db, 'users', user.uid) as DocumentReference<User>

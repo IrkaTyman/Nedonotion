@@ -15,8 +15,10 @@ i18n
             escapeValue: false,
         },
         load: 'currentOnly',
+        supportedLngs: ['ru', 'en'],
         backend: {
             loadPath: (languages: string[], namespaces: string[]) => {
+                console.log(languages);
                 return `/locales/${languages[0]}/${namespaces[0]}.json`;
             },
         },

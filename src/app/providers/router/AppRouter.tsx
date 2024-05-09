@@ -8,7 +8,6 @@ import { routeConfig } from './config';
 
 export const AppRouter = () => {
     const [user] = useAuthState(auth);
-
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <Routes>

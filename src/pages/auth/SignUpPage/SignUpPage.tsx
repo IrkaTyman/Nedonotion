@@ -18,8 +18,7 @@ export const SignUpPage: FC<Props> = typedMemo(function SignUpPage({
     className,
     'data-testid': dataTestId = 'SignUpPage',
 }) {
-    const { t, i18n } = useTranslation([Namespace.Auth.ns]);
-    console.log(t, i18n);
+    const { t } = useTranslation([Namespace.Auth.ns]);
     return (
         <div
             className={getBemClasses(styles, null, null, className)}

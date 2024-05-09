@@ -33,6 +33,7 @@ export const PasswordField: FC<Props> = typedMemo(function PasswordField({
                         value={value}
                         type={isVisible ? 'text' : 'password'}
                         onChange={onChange}
+                        onBlur={event => onChange(event.target.value.trim())}
                         placeholder={t('enter_password', Namespace.Common)}
                         endContent={
                             isVisible
