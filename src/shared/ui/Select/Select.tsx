@@ -1,25 +1,5 @@
 import { FC } from 'react';
 import ReactSelect, { Props as SelectProps } from 'react-select';
-import { ContainerProps, IndicatorsContainerProps } from 'react-select/dist/declarations/src/components/containers';
-import { ControlProps } from 'react-select/dist/declarations/src/components/Control';
-import { GroupHeadingProps, GroupProps } from 'react-select/dist/declarations/src/components/Group';
-import {
-    ClearIndicatorProps,
-    DropdownIndicatorProps,
-    IndicatorSeparatorProps, LoadingIndicatorProps,
-} from 'react-select/dist/declarations/src/components/indicators';
-import { InputProps } from 'react-select/dist/declarations/src/components/Input';
-import {
-    MenuListProps,
-    MenuProps,
-    NoticeProps,
-    PortalStyleArgs,
-} from 'react-select/dist/declarations/src/components/Menu';
-import { MultiValueProps } from 'react-select/dist/declarations/src/components/MultiValue';
-import { OptionProps } from 'react-select/dist/declarations/src/components/Option';
-import { PlaceholderProps } from 'react-select/dist/declarations/src/components/Placeholder';
-import { SingleValueProps } from 'react-select/dist/declarations/src/components/SingleValue';
-import { CSSObjectWithLabel } from 'react-select/dist/declarations/src/types';
 
 import { getBemClasses, typedMemo } from '@shared/lib';
 import { ClassNameProps, TestProps } from '@shared/types';

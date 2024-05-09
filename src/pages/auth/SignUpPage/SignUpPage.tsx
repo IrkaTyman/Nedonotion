@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { SignUpForm } from '@features/user';
+import { ChangeLanguageDropdown, SignUpForm } from '@features/user';
 
 import SmallLogo from '@shared/assets/icons/SmallLogo.svg';
 import { Namespace } from '@shared/config/i18n';
@@ -26,6 +26,7 @@ export const SignUpPage: FC<Props> = typedMemo(function SignUpPage({
         >
             <header className={getBemClasses(styles, 'header', null, getFlexContainerStyleClasses({ direction: 'row', alignItems: 'center', gap: 'm' }))}>
                 <SmallLogo className={getBemClasses(styles, 'logo')} />
+                <ChangeLanguageDropdown />
             </header>
             <main className={getBemClasses(styles, 'main', null, getFlexContainerStyleClasses({ direction: 'column', alignItems: 'center', justifyContent: 'center', gap: 'xxl' }))}>
                 <h1 className={getBemClasses(styles, 'title')}>
