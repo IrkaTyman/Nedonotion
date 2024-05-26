@@ -15,7 +15,7 @@ min-height: 100vh;
 
 .SignUpPage__title {
     font-weight: var(--font-weight-bold);
-    font-size: 76px;
+    font-size: 45px;
 }
 
 .SignUpPage__form {

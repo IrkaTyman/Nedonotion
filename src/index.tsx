@@ -17,6 +17,8 @@ root.render(
         <BrowserRouter>
             <QueryClientProvider client={queryClient}>
                 <App />
+                <div id="modal-portal" />
+                <div id="portal" />
             </QueryClientProvider>
         </BrowserRouter>
     </ErrorBoundary>,

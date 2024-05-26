@@ -15,7 +15,7 @@ min-height: 100vh;
 
 .SignInPage__title {
     font-weight: var(--font-weight-bold);
-    font-size: 76px;
+    font-size: 45px;
 }
 
 .SignInPage__form {
