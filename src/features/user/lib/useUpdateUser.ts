@@ -17,7 +17,7 @@ type Arguments = {
  * @param options
  */
 export function useUpdateUser(
-    options: AxiosUseMutationOptions<void, Arguments>,
+    options?: AxiosUseMutationOptions<void, Arguments>,
 ) {
     return useMutation(
         (args: Arguments) => updateUser(args.uid, args.user),

@@ -5,5 +5,12 @@
   "enter_email": "Введите почту",
   "enter_password" : "Введите пароль (не менее 8 символов)",
   "enter_name": "Введите имя",
-  "loading": "Загрузка"
+  "loading": "Загрузка",
+  "my_profile": "Мой профиль",
+  "secure": "Безопасность",
+  "danger_zone": "Опасная зона",
+  "preferred_name": "Предпочитаемое имя",
+  "delete_account": "Удалить аккаунт",
+  "change_email": "Изменить почту",
+  "change_password": "Изменить пароль"
 }

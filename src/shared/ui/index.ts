@@ -9,3 +9,6 @@ export * from './Separator';
 export * from './Loader';
 export * from './Portal';
 export * from './Modal';
+export * from './FileInput';
+export * from './Tooltip';
+export * from './Image';

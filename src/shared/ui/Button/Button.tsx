@@ -31,7 +31,7 @@ export type Props = ClassNameProps &
          * Цвет кнопки
          * @default primary
          */
-        color?: 'main' | 'primary' | 'secondary';
+        color?: 'main' | 'primary' | 'secondary' | 'danger';
     }>;
 
 /**
@@ -67,6 +67,8 @@ export const Button: FC<Props> = typedMemo(function Button({
             className={getBemClasses(styles, null, { variant, color }, className)}
             data-testid={dataTestId}
             {...buttonProps}
-        />
+        >
+            {ContentComponent}
+        </button>
     );
 });

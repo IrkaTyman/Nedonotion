@@ -1,0 +1,45 @@
+.EditUserModal {
+
+}
+
+.EditUserModal__label {
+    margin-bottom: 0;
+}
+
+.EditUserModal__header {
+    font-size: var(--font-size-l);
+    color: var(--secondary-text-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.EditUserModal__headerContainer_isDanger .EditUserModal__header {
+    color: var(--danger-color)
+}
+
+.EditUserModal__deleteButton {
+    align-self: start;
+}
+
+.EditUserModal__fileInput {
+    width: 64px;
+    height: 64px;
+    background-color: var(--accent-color);
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.EditUserModal__fileInputFilled {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.EditUserModal__fileInput p{
+    display: none;
+}
+
+.EditUserModal__secureValue {
+    font-size: var(--font-size-s);
+    color: var(--secondary-text-color);
+}

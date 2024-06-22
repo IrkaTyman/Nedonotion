@@ -29,6 +29,12 @@
     color: var(--active-color);
 }
 
+.Button_color_danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
 /* Variant */
 .Button_variant_solid {
     color: #fff;
